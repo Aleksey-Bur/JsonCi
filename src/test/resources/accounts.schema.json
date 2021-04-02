@@ -1,10 +1,8 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "array",
-  "default": [],
   "items": {
     "type": "object",
-    "additionalProperties": false,
     "required": [
       "id",
       "name",
@@ -12,6 +10,7 @@
       "balance",
       "currency"
     ],
+    "additionalProperties": false,
     "properties": {
       "id": {
         "type": "integer"
@@ -25,8 +24,7 @@
         "pattern": "^•• \\d{4}$"
       },
       "balance": {
-        "type": "integer",
-        "default": 0
+        "type": "integer"
       },
       "currency": {
         "type": "string"
